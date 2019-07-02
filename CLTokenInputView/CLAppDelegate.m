@@ -8,7 +8,7 @@
 
 #import "CLAppDelegate.h"
 
-#import "CLTokenInputViewController.h"
+#import "CLTokenInputView-Swift.h"
 
 @implementation CLAppDelegate
 
@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
 
-    CLTokenInputViewController *tokenVC = [[CLTokenInputViewController alloc] initWithNibName:nil bundle:nil];
+    CLTokenInputViewController *tokenVC = [[CLTokenInputViewController alloc] initWithNibName:@"CLTokenInputViewController" bundle:nil];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tokenVC];
     self.window.rootViewController = nav;
 
